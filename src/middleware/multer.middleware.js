@@ -9,18 +9,19 @@ const upload = multer({
             cb(null, file.originalname);
         }
     })
-  })
+  });
 
 export { upload };
 
 
 // const storage = multer.diskStorage({
 //     destination: function (req, file, cb) {
-//         cb(null, './public/temp')
+//         cb(null, './public')
 //     },
 //     filename: function (req, file, cb) {
 //         cb(null, file.originalname)
 //     }
 // })
 
-// export const upload = multer({ storage: storage })
+// const upload = multer({ storage: storage });
+// export { upload }

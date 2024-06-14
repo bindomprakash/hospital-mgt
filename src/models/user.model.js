@@ -7,28 +7,23 @@ const userSchame = new mongoose.Schema({
         type: String,
         require: true,
         unique: true,
-        lowcase: true
     },
     email: {
         type: String,
         require: [true, 'Email is required ..'],
         unique: true,
-        lowcase: true
     },
     fullname: {
         type: String,
         require: true,
-        lowcase: true
     },
-    avtar: {
+    avatar: {
         type: String, // cloudinary url
-        require: true,
-        lowcase: true
+        // require: true,
     },
     coverimage: {
         type: String, // cloudinary url
         require: true,
-        lowcase: true
     },
     password: {
         type: String,
